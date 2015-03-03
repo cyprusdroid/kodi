@@ -1,5 +1,5 @@
 name="Core Addons pack"
-url="https://onedrive.live.com/download?resid=31A7E82E3F3CBB79%21205"
+url="https://www.dropbox.com/s/llkv31v6dypoe0x/backup.zip?dl=1"
 img="http://droidbox.co.uk/xbmc/AndroidSticks/images/main.jpg"
 fanart="https://dl.dropboxusercontent.com/u/24282292/xbmc/fanart.jpg"
 description="Core addons pack"
