@@ -1,5 +1,5 @@
 name="M8 Addons pack"
 url="https://www.dropbox.com/s/llkv31v6dypoe0x/backup.zip?dl=1”
-img="https://www.dropbox.com/s/hh6ihy85mzeac9f/m8_t8_image.jpg?dl=1”
-fanart="https://www.dropbox.com/s/1nv6yq50wlgyq20/fanart.png?dl=1”
+img="http://droidbox.co.uk/xbmc/AndroidSticks/images/main.jpg"
+fanart="https://dl.dropboxusercontent.com/u/24282292/xbmc/fanart.jpg"
 description="M8 Addons pack"
