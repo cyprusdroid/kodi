@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.cyprusdroid" name=".CyprusDroid_Repository" version="1.0.0" provider-name="CyprusDroid">
 	<extension point="xbmc.addon.repository" name=".CyprusDroid_Repository">
-		<info compressed="false">https://github.com/cyprusdroid/kodi/blob/master/addons.xml</info>
-		<checksum>https://github.com/cyprusdroid/kodi/blob/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/cyprusdroid/kodi/blob/master/</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/cyprusdroid/kodi/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/cyprusdroid/kodi/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/cyprusdroid/kodi/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Testing.</summary>
