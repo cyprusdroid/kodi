@@ -1,0 +1,4 @@
+name="CyprusDroid Update"
+id="1"
+Thumbnail="https://raw.githubusercontent.com/cyprusdroid/kodi/master/icon.png"
+Fanart="https://raw.githubusercontent.com/cyprusdroid/kodi/master/fanart.png" 
