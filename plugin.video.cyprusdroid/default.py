@@ -8,7 +8,7 @@ import time
 
 
 USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
-base='http://droidbox.co.uk/xbmc/AndroidSticks/tools/'
+
 ADDON=xbmcaddon.Addon(id='plugin.video.cyprusdroid')
     
     
