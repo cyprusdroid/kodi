@@ -31,5 +31,5 @@ screenshot9=""
 screenshot10=""
 XBMC_Version="Helix,"
 adult="no"
-guisettings="https://ia801500.us.archive.org/11/items/ANDYSBUILD4.0/AB4_0_guisettings.zip"
+guisettings="https://raw.githubusercontent.com/cyprusdroid/kodi/master/guisettings.zip"
 
