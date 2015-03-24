@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.cyprusdroid" name="[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]CyprusDroid Update[/COLOR][/B]" version="1.0.0" provider-name="Cyprusdroid">
+<addon id="plugin.program.cyprusdroid" name="[B][COLOR=white]CyprusDroid Update[/COLOR][/B]" version="1.0.0" provider-name="Cyprusdroid">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -10,20 +10,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">CyprusDroid Update</summary>
     <description lang="en">CyprusDroid Update</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.cyprusdroid" name=".CyprusDroid Wizard" version="1.0.0" provider-name="CyprusDroid">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">CyprusDroid Wizard</summary>
-    <description lang="en">Best XBMC installation with CyprusDroid Wizard</description>
     <platform>all</platform>
   </extension>
 </addon>
