@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.cyprusdroid" version="1.0.7" name="[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Total Installer[/COLOR][/B]" provider-name="CyprusDroid">
-<requires>
-	<import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" />
-</requires>
-<extension point="xbmc.python.pluginsource" library="default.py">
-<provides>executable</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-<summary>CyprusDroid installser</summary>
-	<description>Update addons</description>
-	<website></website>
-	<platform>all</platform>
-</extension>
+<addon id="plugin.program.cyprusdroid" name="[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]CyprusDroid Update[/COLOR][/B]" version="1.0.0" provider-name="Cyprusdroid">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">CyprusDroid Update</summary>
+    <description lang="en">CyprusDroid Update</description>
+    <platform>all</platform>
+  </extension>
 </addon>
