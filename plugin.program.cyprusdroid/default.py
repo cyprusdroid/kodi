@@ -11,10 +11,10 @@ import zipfile
 import ntpath
 
 ARTPATH      =  'http://totalxbmc.tv/totalrevolution/art/' + os.sep
-FANART       =  'http://totalxbmc.tv/totalrevolution/art/fanart.jpg'
+FANART       =  'https://raw.githubusercontent.com/cyprusdroid/kodi/master/fanart.png'
 ADDON        =  xbmcaddon.Addon(id='plugin.program.cyprusdroid')
 AddonID      =  'plugin.program.cyprusdroid'
-AddonTitle   =  "[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]CyprusDroid Update[/COLOR][/B]"
+AddonTitle   =  "[B][COLOR=white]CyprusDroid Update[/COLOR][/B]"
 zip          =  ADDON.getSetting('zip')
 localcopy    =  ADDON.getSetting('localcopy')
 dialog       =  xbmcgui.Dialog()
@@ -145,7 +145,7 @@ def VideoCheck():
             #unlocked = 'yes'
           #  Notify('Login Successful', 'Welcome back '+username,'4000','tick.png')
         #elif logged_in == False:
-         #   dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','There is an error with your login information, please check','your username and password, remember this is case','sensitive so use capital letters where needed.')
+         #   dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','There is an error with your login information, please check','your username and password, remember this is case','sensitive so use capital letters where needed.')
           #  ADDON.openSettings(sys.argv[0])
    # else:
     #    pop()
@@ -193,18 +193,18 @@ def COMMUNITY_BACKUP():
     FIX_SPECIAL(path)
     backup_zip = xbmc.translatePath(os.path.join(fullbackuppath,title+'.zip'))
     ARCHIVE_FILE(path,backup_zip)
-    dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]CyprusDroid[/COLOR][/B]","Deleting temporary files",'', 'Please Wait')
+    dp.create("[B] [COLOR=white]CyprusDroid[/COLOR][/B]","Deleting temporary files",'', 'Please Wait')
     GUIname = xbmc.translatePath(os.path.join(fullbackuppath, title+'_guisettings.zip'))
     zf = zipfile.ZipFile(GUIname, mode='w')
     zf.write(xbmc.translatePath(os.path.join(path,'userdata','guisettings.xml')), 'guisettings.xml', zipfile.ZIP_DEFLATED) #Create guisettings.zip
     zf.close()
     shutil.rmtree(path)
     dp.close()
-    dialog.ok("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] CyprusDroid[/B]", 'You Are Now Backed Up. If you\'d like to share this build with', 'the community please post details on the forum at', '[COLOR=lime][B]www.totalxbmc.tv[/COLOR][/B]')
+    dialog.ok("[B] CyprusDroid[/B]", 'You Are Now Backed Up. If you\'d like to share this build with', 'the community please post details on the forum at', '[COLOR=lime][B]www.totalxbmc.tv[/COLOR][/B]')
 #---------------------------------------------------------------------------------------------------
 #Convert physical paths to special paths
 def FIX_SPECIAL(url):
-    dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]CyprusDroid[/COLOR][/B]","Renaming paths...",'', 'Please Wait')
+    dp.create("[B] [COLOR=white]CyprusDroid[/COLOR][/B]","Renaming paths...",'', 'Please Wait')
     for root, dirs, files in os.walk(url):  #Search all xml files and replace physical with special
         for file in files:
             if file.endswith(".xml"):
@@ -249,7 +249,7 @@ def ARCHIVE_FILE(sourcefile, destfile):
     rootlen = len(sourcefile)
     for_progress = []
     ITEM =[]
-    dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]CyprusDroid[/COLOR][/B]","Archiving...",'', 'Please Wait')
+    dp.create("[B] [COLOR=white]CyprusDroid[/COLOR][/B]","Archiving...",'', 'Please Wait')
     for base, dirs, files in os.walk(sourcefile):
         for file in files:
             ITEM.append(file)
@@ -365,7 +365,7 @@ def COMMUNITY2(url):
 #Function to populate the search based on the initial first filter
 def COMMUNITY_SEARCH(url):
     if zip == '':
-        dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]CyprusDroid[/COLOR][/B]','You have not set your backup storage folder.\nPlease update the addon settings and try again.','','')
+        dialog.ok('[B] [COLOR=white]CyprusDroid[/COLOR][/B]','You have not set your backup storage folder.\nPlease update the addon settings and try again.','','')
         ADDON.openSettings(sys.argv[0])
     username = ADDON.getSetting('username')
     password = ADDON.getSetting('password')
@@ -417,7 +417,7 @@ def RESTORE_COMMUNITY(name,url,description,skins,guisettingslink):
     except:
         dialog.ok("NO GUISETTINGS!",'No guisettings.xml file has been found.', 'Please exit XBMC and try again','')
         return
-    choice = xbmcgui.Dialog().yesno(name, 'We highly recommend backing up your existing build before', 'installing any community builds.', 'Would you like to perform a backup first?', nolabel='Backup',yeslabel='Install')
+    choice = xbmcgui.Dialog().yesno(name, 'We highly recommend backing up your existing build before', 'installing any update.', 'Would you like to perform a backup first?', nolabel='Backup',yeslabel='Install')
     if choice == 0:
         BACKUP()
     elif choice == 1:
@@ -442,7 +442,7 @@ def RESTORE_COMMUNITY(name,url,description,skins,guisettingslink):
                 ARCHIVE_FILE(tempdbpath,backup_zip)
             if choice4 == 0: return
             time.sleep(1)
-            dp.create("Community Builds","Downloading "+description +" build.",'', 'Please Wait')
+            dp.create("update","Downloading "+description +" build.",'', 'Please Wait')
             lib=os.path.join(CBPATH, description+'.zip')
             if not os.path.exists(CBPATH):
                 os.makedirs(CBPATH)
@@ -451,7 +451,7 @@ def RESTORE_COMMUNITY(name,url,description,skins,guisettingslink):
             default_contents = readfile.read()
             readfile.close()
             READ_ZIP(lib)
-            dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]","Checking ",'', 'Please Wait')
+            dp.create("[B] [COLOR=white]update[/COLOR][/B]","Checking ",'', 'Please Wait')
             HOME = xbmc.translatePath(os.path.join('special://','home')) 
             dp.update(0,"", "Extracting Zip Please Wait")
             extract.all(lib,HOME,dp)
@@ -556,11 +556,11 @@ def CHECK_GUITEMP(url):
 #Function to restore a zip file 
 def CHECK_DOWNLOAD_PATH():
     if zip == '':
-        dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','You have not set your ZIP Folder.\nPlease update the addon settings and try again.','','')
+        dialog.ok('[B] [COLOR=white]update[/COLOR][/B]','You have not set your ZIP Folder.\nPlease update the addon settings and try again.','','')
         ADDON.openSettings(sys.argv[0])
     path = xbmc.translatePath(os.path.join(zip,'testCBFolder'))
     if not os.path.exists(zip):
-        dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','The download location you have stored does not exist .\nPlease update the addon settings and try again.','','')        
+        dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','The download location you have stored does not exist .\nPlease update the addon settings and try again.','','')        
         ADDON.openSettings(sys.argv[0])
     if os.path.exists(zip):
         try:
@@ -582,16 +582,16 @@ def RESTORE():
     localfile.write('id="Local"\nname="'+clean_title+'"')
     localfile.close()
     READ_ZIP(filename)
-    dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]","Checking ",'', 'Please Wait')
+    dp.create("[B] [COLOR=white]Update[/COLOR][/B]","Checking ",'', 'Please Wait')
     HOME = xbmc.translatePath(os.path.join('special://','home'))   
     dp.update(0,"", "Extracting Zip Please Wait")
     extract.all(filename,HOME,dp)
     localfile = open(idfile, mode='w+')
     localfile.write('id="Local"\nname="Incomplete"')
     localfile.close()
-    dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','Step 1 complete. Now please change the skin to','the one this build was designed for. Once done come back','to this addon and click the link to complete the setup.')        
+    dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','Step 1 complete. Now please change the skin to','the one this build was designed for. Once done come back','to this addon and click the link to complete the setup.')        
     xbmc.executebuiltin("ActivateWindow(appearancesettings)")
-    # dialog.ok("Community Builds - Install Complete", 'To ensure the skin settings are set correctly XBMC will now', 'close. If XBMC doesn\'t close please force close (pull power', 'or force close in your OS - [COLOR=lime]DO NOT exit via XBMC menu[/COLOR])')
+    # dialog.ok("Update - Install Complete", 'To ensure the skin settings are set correctly XBMC will now', 'close. If XBMC doesn\'t close please force close (pull power', 'or force close in your OS - [COLOR=lime]DO NOT exit via XBMC menu[/COLOR])')
     # killxbmc()
 #---------------------------------------------------------------------------------------------------
 #Function to restore a local copy of a CB file
@@ -618,7 +618,7 @@ def RESTORE_LOCAL_COMMUNITY():
     except:
         dialog.ok("NO GUISETTINGS!",'No guisettings.xml file has been found.', 'Please exit XBMC and try again','')
         return
-    choice = xbmcgui.Dialog().yesno(name, 'We highly recommend backing up your existing build before', 'installing any community builds.', 'Would you like to perform a backup first?', nolabel='Backup',yeslabel='Install')
+    choice = xbmcgui.Dialog().yesno(name, 'We highly recommend backing up your existing build before', 'installing any Update.', 'Would you like to perform a backup first?', nolabel='Backup',yeslabel='Install')
     if choice == 0:
         BACKUP()
     elif choice == 1:
@@ -647,7 +647,7 @@ def RESTORE_LOCAL_COMMUNITY():
             default_contents = readfile.read()
             readfile.close()
             READ_ZIP(filename)
-            dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]","Checking ",'', 'Please Wait')
+            dp.create("[B] [COLOR=white]Update[/COLOR][/B]","Checking ",'', 'Please Wait')
             HOME = xbmc.translatePath(os.path.join('special://','home')) 
             dp.update(0,"", "Extracting Zip Please Wait")
             extract.all(filename,HOME,dp)
@@ -708,7 +708,7 @@ def RESTORE_LOCAL_COMMUNITY():
                 xbmc.sleep(500)
             try: xbmc.executebuiltin("LoadProfile(Master user)")
             except: pass
-            dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','Step 1 complete. Now please change the skin to','the one this build was designed for. Once done come back','to this addon and restore the guisettings_fix.zip')        
+            dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','Step 1 complete. Now please change the skin to','the one this build was designed for. Once done come back','to this addon and restore the guisettings_fix.zip')        
             xbmc.executebuiltin("ActivateWindow(appearancesettings)")
 #---------------------------------------------------------------------------------------------------
 #Function to restore a local copy of guisettings_fix
@@ -854,7 +854,7 @@ def SHOWINFO(url):
 # Check local file version name and number against db
 def Check_For_Update(localbuildcheck,localversioncheck,id):
     print "Local Version Check: "+localversioncheck
-    if localbuildcheck == factoryname: pass
+    #if localbuildcheck == factoryname: pass
 
     BaseURL = 'http://totalxbmc.tv/totalrevolution/Community_Builds/buildupdate.php?id=%s' % (id)
     link = OPEN_URL(BaseURL).replace('\n','').replace('\r','')
@@ -870,30 +870,31 @@ def Check_For_Update(localbuildcheck,localversioncheck,id):
         print "local build: "+str(localbuildcheck)
         print "all good in the hood"
 #---------------------------------------------------------------------------------------------------
-#Build the root search menu for installing community builds
+#Build the root search menu for installing Update
 def CB_Root_Menu():
     logged_in = True
     xbmc_version=xbmc.getInfoLabel("System.BuildVersion")
     version=float(xbmc_version[:4])
-    login = 'true'
-    if login == 'true':
-        if logged_in == True:
-            addDir('Manual Search','url','manual_search','Manual_Search.png','','','')
-            addDir('Search By Genre','url','genres','Search_Genre.png','','','')
-            addDir('Search By Country/Language','url','countries','Search_Country.png','','','')
-            if version < 14:
-                addDir('Show All Gotham Compatible Builds','genre=','grab_builds','TRCOMMUNITYGOTHAMBUILDS.png','','','')
-            else:
-                addDir('Show All Helix Compatible Builds','genre=','grab_builds','TRCOMMUNITYHELIXBUILDS.png','','','')
-        elif logged_in == False:
-            dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','There is an error with your login information, please check','your username and password, remember this is case','sensitive so use capital letters where needed.')
-            ADDON.openSettings(sys.argv[0])
-    else:
-        dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','[COLOR=blue][B]Did you know you\'re missing out of some great features?[/B][/COLOR]','To unlock this content simply register on the forum for [COLOR=yellow]FREE[/COLOR]','at [COLOR=lime]www.totalxbmc.tv[/COLOR] and enter details in the addon settings.')
-        if version < 14:
-            addDir('Show All Gotham Compatible Builds','genre=','grab_builds','TRCOMMUNITYGOTHAMBUILDS.png','','','')
-        else:
-            addDir('Show All Helix Compatible Builds','genre=','grab_builds','TRCOMMUNITYHELIXBUILDS.png','','','')       
+    addDir('Show All Helix Compatible Builds','genre=','grab_builds','TRCOMMUNITYHELIXBUILDS.png','','','') 
+    #login = 'true'
+    #if login == 'true':
+        #if logged_in == True:
+            #addDir('Manual Search','url','manual_search','Manual_Search.png','','','')
+            #addDir('Search By Genre','url','genres','Search_Genre.png','','','')
+            #addDir('Search By Country/Language','url','countries','Search_Country.png','','','')
+            #if version < 14:
+                #addDir('Show All Gotham Compatible Builds','genre=','grab_builds','TRCOMMUNITYGOTHAMBUILDS.png','','','')
+            #else:
+                #addDir('Show All Helix Compatible Builds','genre=','grab_builds','TRCOMMUNITYHELIXBUILDS.png','','','')
+        #elif logged_in == False:
+            #dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','There is an error with your login information, please check','your username and password, remember this is case','sensitive so use capital letters where needed.')
+            #ADDON.openSettings(sys.argv[0])
+    #else:
+        #dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','[COLOR=blue][B]Did you know you\'re missing out of some great features?[/B][/COLOR]','To unlock this content simply register on the forum for [COLOR=yellow]FREE[/COLOR]','at [COLOR=lime]www.totalxbmc.tv[/COLOR] and enter details in the addon settings.')
+        #if version < 14:
+            #addDir('Show All Gotham Compatible Builds','genre=','grab_builds','TRCOMMUNITYGOTHAMBUILDS.png','','','')
+        #else:
+           
 #---------------------------------------------------------------------------------------------------
 #Search in description
 def MANUAL_SEARCH():
@@ -1107,9 +1108,9 @@ def PLAYVIDEO(url):
 #---------------------------------------------------------------------------------------------------
 #Create How To (instructions) menu
 def INSTRUCTIONS(url):
-    addDir('[COLOR=dodgerblue][TEXT GUIDE][/COLOR] What is Community Builds?','url','instructions_3','How_To.png','','','')
+    addDir('[COLOR=dodgerblue][TEXT GUIDE][/COLOR] What is Update?','url','instructions_3','How_To.png','','','')
     addDir('[COLOR=dodgerblue][TEXT GUIDE][/COLOR] Creating a Community Build','url','instructions_1','How_To.png','','','')
-    addDir('[COLOR=dodgerblue][TEXT GUIDE][/COLOR] Installing a Community Build','url','instructions_2','How_To.png','','','')
+    addDir('[COLOR=dodgerblue][TEXT GUIDE][/COLOR] Installing an Update','url','instructions_2','How_To.png','','','')
     addDir('[COLOR=lime][VIDEO GUIDE][/COLOR] IMPORTANT initial settings',"1vXniHsEMEg",'play_video','howto.png','','','')
     addDir('[COLOR=lime][VIDEO GUIDE][/COLOR] Install a Community Build',"kLsVOapuM1A",'play_video','howto.png','','','')
     addDir('[COLOR=lime][VIDEO GUIDE][/COLOR] Fixing a half installed build (guisettings.xml fix)',"X8QYLziFzQU",'play_video','howto.png','','','')
@@ -1127,7 +1128,7 @@ def Instructions_1():
     '[CR][CR][COLOR=blue][B]Step 2:[/COLOR] Backup your system[/B][CR]Choose the backup option from the main menu, in there you\'ll find the option to create a Community Build and this will create two zip files that you need to upload to a server.'
     '[CR][CR][COLOR=blue][B]Step 3:[/COLOR] Upload the zips[/B][CR]Upload the two zip files to a server that Kodi can access, it has to be a direct link and not somewhere that asks for captcha - Dropbox and archive.org are two good examples.'
     '[CR][CR][COLOR=blue][B]Step 4:[/COLOR] Submit build at TotalXBMC[/B]'
-    '[CR]Create a thread on the Community Builds section of the forum at [COLOR=lime][B]www.totalxbmc.tv[/COLOR][/B].[CR]Full details can be found on there of the template you should use when posting.'
+    '[CR]Create a thread on the Update section of the forum at [COLOR=lime][B]www.totalxbmc.tv[/COLOR][/B].[CR]Full details can be found on there of the template you should use when posting.'
     '[CR][CR][COLOR=yellow]OLD METHOD[/COLOR][CR][COLOR=blue][B]Step 1: Backup your system[/B][/COLOR][CR]Choose the backup option from the main menu, you will be asked whether you would like to delete your addon_data folder. If you decide to choose this option [COLOR=yellow][B]make sure[/COLOR][/B] you already have a full backup of your system as it will completely wipe your addon settings (any stored settings such as passwords or any other changes you\'ve made to addons since they were first installed). If sharing a build with the community it\'s highly advised that you wipe your addon_data but if you\'ve made changes or installed extra data packages (e.g. skin artwork packs) then backup the whole build and then manually delete these on your PC and zip back up again (more on this later).'
     '[CR][CR][COLOR=blue][B]Step 2: Edit zip file on your PC[/B][/COLOR][CR]Copy your backup.zip file to your PC, extract it and delete all the addons and addon_data that isn\'t required.'
     '[CR][COLOR=blue]What to delete:[/COLOR][CR][COLOR=lime]/addons/packages[/COLOR] This folder contains zip files of EVERY addon you\'ve ever installed - it\'s not needed.'
@@ -1140,19 +1141,19 @@ def Instructions_1():
     '[CR][COLOR=lime]/xbmc.log (or Kodi.log)[/COLOR] Delete your log files, this includes any crashlog files you may have.'
     '[CR][CR][COLOR=blue][B]Step 3: Compress and upload[/B][/COLOR][CR]Use a program like 7zip to create a zip file of your remaining folders and upload to a file sharing site like dropbox.'
     '[CR][CR][COLOR=blue][B]Step 4: Submit build at TotalXBMC[/B][/COLOR]'
-    '[CR]Create a thread on the Community Builds section of the forum at [COLOR=lime][B]www.totalxbmc.tv[/COLOR][/B].[CR]Full details can be found on there of the template you should use when posting.')
+    '[CR]Create a thread on the Update section of the forum at [COLOR=lime][B]www.totalxbmc.tv[/COLOR][/B].[CR]Full details can be found on there of the template you should use when posting.')
  #---------------------------------------------------------------------------------------------------
 #(Instructions) Install a community build   
 def Instructions_2():
     TextBoxes('Installing a community build', '[COLOR=blue][B]Step 1 (Optional): Backup your system[/B][/COLOR][CR]We highly recommend creating a backup of your system in case you don\'t like the build and want to revert back. Choose the backup option from the main menu, you will be asked whether you would like to delete your addon_data folder, select no unless you want to lose all your settings. If you ever need your backup it\'s stored in the location you\'ve selected in the addon settings.'
-    '[CR][CR][COLOR=blue][B]Step 2: Browse the Community Builds[/B][/COLOR][CR]Find a community build you like the look of and make sure you read the description as it could contain unsuitable content or have specific install instructions. Once you\'ve found the build you want to install click on the install option and you\'ll have the option of a fresh install or a merge . The merge option will leave all your existing addons and userdata in place and just add the contents of the new build whereas the fresh (wipe) option will completely wipe your existing data and replace with content on the new build. Once you make your choice the download and extraction process will begin.'
+    '[CR][CR][COLOR=blue][B]Step 2: Browse the Update[/B][/COLOR][CR]Find a community build you like the look of and make sure you read the description as it could contain unsuitable content or have specific install instructions. Once you\'ve found the build you want to install click on the install option and you\'ll have the option of a fresh install or a merge . The merge option will leave all your existing addons and userdata in place and just add the contents of the new build whereas the fresh (wipe) option will completely wipe your existing data and replace with content on the new build. Once you make your choice the download and extraction process will begin.'
     '[CR][CR][COLOR=blue][B]Step 3: [/COLOR][COLOR=red]VERY IMPORTANT[/COLOR][/B][CR]For the install to complete properly you MUST change the skin to the relevant skin used for that build. You will see a dialog box telling you which skin to switch to and then you\'ll be taken to the appearance settings where you can switch skins.'
-    '[CR][CR][COLOR=blue][B]Step 4:[/B][/COLOR] Now go back to the Community Builds addon and in the same section wehre you clicked on step 1 of the install process you now need to select step 2 so it can install the guisettings.xml. This is extremely important, if you don\'t do this step then you\'ll end up with a real mish-mash hybrid install!'
+    '[CR][CR][COLOR=blue][B]Step 4:[/B][/COLOR] Now go back to the Update addon and in the same section wehre you clicked on step 1 of the install process you now need to select step 2 so it can install the guisettings.xml. This is extremely important, if you don\'t do this step then you\'ll end up with a real mish-mash hybrid install!'
     '[CR][CR][COLOR=blue][B]Step 5:[/B][/COLOR] You will now need to restart Kodi so the settings stick, just quit and it should all be fine. If for any reason the settings did not stick and it still doesn\'t look quite right just do step 2 of the install process again (guisettings.xml fix)')
     #---------------------------------------------------------------------------------------------------
 #(Instructions) What is a community build
 def Instructions_3():
-    TextBoxes('What is a community build', 'Community Builds are pre-configured builds of XBMC/Kodi based on different users setups. Have you ever watched youtube videos or seen screenshots of Kodi in action and thought "wow I wish I could do that"? Well now you can have a brilliant setup at the click of a button, completely pre-configured by users on the [COLOR=lime][B]www.totalxbmc.tv[/COLOR][/B] forum. If you\'d like to get involved yourself and share your build with the community it\'s very simple to do, just go to the forum where you\'ll find full details or you can follow the guide in this addon.')
+    TextBoxes('What is a community build', 'Update are pre-configured builds of XBMC/Kodi based on different users setups. Have you ever watched youtube videos or seen screenshots of Kodi in action and thought "wow I wish I could do that"? Well now you can have a brilliant setup at the click of a button, completely pre-configured by users on the [COLOR=lime][B]www.totalxbmc.tv[/COLOR][/B] forum. If you\'d like to get involved yourself and share your build with the community it\'s very simple to do, just go to the forum where you\'ll find full details or you can follow the guide in this addon.')
 #---------------------------------------------------------------------------------------------------
 # This creates the final menu showing build details, video and install link
 def COMMUNITY_MENU(url):
@@ -1243,7 +1244,7 @@ def GUI_MERGE(url,local):
         os.remove(PROFILES)
     if not os.path.exists(guitemp):
         os.makedirs(guitemp)
-    dp.create("Community Builds","Downloading guisettings.xml",'', 'Please Wait')
+    dp.create("Update","Downloading guisettings.xml",'', 'Please Wait')
     os.rename(GUI,GUINEW) #Rename guisettings.xml to guinew.xml so we can edit without XBMC interfering.
     if local!=1:
         lib=os.path.join(USB, 'guifix.zip')
@@ -1251,7 +1252,7 @@ def GUI_MERGE(url,local):
     else:
         lib=xbmc.translatePath(url)
     READ_ZIP(lib)
-    dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]","Checking ",'', 'Please Wait')
+    dp.create("[B] [COLOR=white]Update[/COLOR][/B]","Checking ",'', 'Please Wait')
     dp.update(0,"", "Extracting Zip Please Wait")
     extract.all(lib,guitemp,dp)
     try:
@@ -1322,7 +1323,7 @@ def DESCRIPTION(name,url,buildname,author,version,description,updated,skins,vide
     TextBoxes(buildname+'     v.'+version, '[COLOR=yellow][B]Author:   [/B][/COLOR]'+author+'[COLOR=yellow][B]               Last Updated:   [/B][/COLOR]'+updated+'[COLOR=yellow][B]               Adult Content:   [/B][/COLOR]'+adult+'[CR][CR][COLOR=yellow][B]Description:[CR][/B][/COLOR]'+description+
     '[CR][CR][COLOR=blue][B]Skins:   [/B][/COLOR]'+skins+'[CR][CR][COLOR=blue][B]Video Addons:   [/B][/COLOR]'+videoaddons+'[CR][CR][COLOR=blue][B]Audio Addons:   [/B][/COLOR]'+audioaddons+
     '[CR][CR][COLOR=blue][B]Program Addons:   [/B][/COLOR]'+programaddons+'[CR][CR][COLOR=blue][B]Picture Addons:   [/B][/COLOR]'+pictureaddons+'[CR][CR][COLOR=blue][B]Sources:   [/B][/COLOR]'+sources+
-    '[CR][CR][COLOR=gold]Disclaimer: [/COLOR]These are community builds and they may overwrite some of your existing settings, '
+    '[CR][CR][COLOR=gold]Disclaimer: [/COLOR]These are Update and they may overwrite some of your existing settings, '
     'things like system location and screen calibration will almost certainly have to be changed once the install has completed. TotalXBMC take no responsibility over what content '
     'is included in these builds, it\'s up to the individual who uploads the build to state what\'s included and then the users decision to decide whether or not that content is suitable for them.')
 #---------------------------------------------------------------------------------------------------
@@ -1415,7 +1416,7 @@ def RESTORE_ZIP_FILE(url):
         DeletePackages() 
         import zipfile
         import sys
-        dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]","Backing Up",'', 'Please Wait')
+        dp.create("[B] [COLOR=white]Update[/COLOR][/B]","Backing Up",'', 'Please Wait')
         zipobj = zipfile.ZipFile(ZIPFILE , 'w', zipfile.ZIP_DEFLATED)
         rootlen = len(DIR)
         for_progress = []
@@ -1439,10 +1440,10 @@ def RESTORE_ZIP_FILE(url):
                            zipobj.write(fn, fn[rootlen:]) 
         zipobj.close()
         dp.close()
-        dialog.ok("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]", "You Are Now Backed Up", '','')   
+        dialog.ok("[B] [COLOR=white]Update[/COLOR][/B]", "You Are Now Backed Up", '','')   
     else:
 
-        dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]","Checking ",'', 'Please Wait')
+        dp.create("[B] [COLOR=white]Update[/COLOR][/B]","Checking ",'', 'Please Wait')
         
         import time
         dp.update(0,"", "Extracting Zip Please Wait")
@@ -1452,9 +1453,9 @@ def RESTORE_ZIP_FILE(url):
         xbmc.executebuiltin("UpdateAddonRepos")        
         if 'Backup' in name:
             killxbmc()
-            dialog.ok("Community Builds - Install Complete", 'To ensure the skin settings are set correctly XBMC will now', 'close. If XBMC doesn\'t close please force close (pull power', 'or force close in your OS - [COLOR=lime]DO NOT exit via XBMC menu[/COLOR])')
+            dialog.ok("Update - Install Complete", 'To ensure the skin settings are set correctly XBMC will now', 'close. If XBMC doesn\'t close please force close (pull power', 'or force close in your OS - [COLOR=lime]DO NOT exit via XBMC menu[/COLOR])')
         else:
-            dialog.ok("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]", "You Are Now Restored", '','')        
+            dialog.ok("[B] [COLOR=white]Update[/COLOR][/B]", "You Are Now Restored", '','')        
 #---------------------------------------------------------------------------------------------------
 #Function to restore a backup xml file (guisettings, sources, RSS)
 def RESTORE_BACKUP_XML(name,url,description):
@@ -1485,7 +1486,7 @@ def RESTORE_BACKUP_XML(name,url,description):
             f = open(TO_WRITE, mode='w')
             f.write(TO_READ)
             f.close()  
-    dialog.ok("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]", "", 'All Done !','')
+    dialog.ok("[B] [COLOR=white]Update[/COLOR][/B]", "", 'All Done !','')
 #---------------------------------------------------------------------------------------------------
 #Function to delete the packages folder
 def DeletePackages():
@@ -1521,10 +1522,10 @@ def DeleteUserData():
             for d in dirs:
                 shutil.rmtree(os.path.join(root, d))        
 #---------------------------------------------------------------------------------------------------
-#Function to do a full wipe. Thanks to kozz for working out how to add an exclude clause so community builds addon_data and addon isn't touched.
+#Function to do a full wipe. Thanks to kozz for working out how to add an exclude clause so Update addon_data and addon isn't touched.
 def WipeXBMC():
     if skin!= "skin.confluence":
-        dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','Please switch to the default Confluence skin','before performing a wipe.','')
+        dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','Please switch to the default Confluence skin','before performing a wipe.','')
         xbmc.executebuiltin("ActivateWindow(appearancesettings)")
         return
     else:
@@ -1535,7 +1536,7 @@ def WipeXBMC():
         if choice == 0:
             return
         elif choice == 1:
-            dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]","Wiping Install",'', 'Please Wait')
+            dp.create("[B] [COLOR=white]Update[/COLOR][/B]","Wiping Install",'', 'Please Wait')
             try:
                 for root, dirs, files in os.walk(HOME,topdown=True):
                     dirs[:] = [d for d in dirs if d not in EXCLUDES]
@@ -1550,10 +1551,10 @@ def WipeXBMC():
                         except: pass
  #               if not failed:
  #                   print"community.builds.WipeXBMC All user files removed, you now have a clean install"
- #                   dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','Wipe Successful, please restart XBMC/Kodi for changes to take effect.','','')
+ #                   dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','Wipe Successful, please restart XBMC/Kodi for changes to take effect.','','')
  #               else:
  #                   print"community.builds.WipeXBMC User files partially removed"
- #                   dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','Wipe Successful, please restart XBMC/Kodi for changes to take effect.','','')
+ #                   dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','Wipe Successful, please restart XBMC/Kodi for changes to take effect.','','')
             except: pass
         REMOVE_EMPTY_FOLDERS()
         REMOVE_EMPTY_FOLDERS()
@@ -1562,7 +1563,7 @@ def WipeXBMC():
         REMOVE_EMPTY_FOLDERS()
         REMOVE_EMPTY_FOLDERS()
         REMOVE_EMPTY_FOLDERS()
-        dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','Wipe Successful, please restart XBMC/Kodi for changes to take effect.','','')
+        dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','Wipe Successful, please restart XBMC/Kodi for changes to take effect.','','')
 
 #---------------------------------------------------------------------------------------------------
 #Function to do remove all empty folders after delete       
@@ -1580,17 +1581,17 @@ def REMOVE_EMPTY_FOLDERS():
             used_count += 1 #increment used_count
 #---------------------------------------------------------------------------------------------------
 #Function to do a full wipe - this is called when doing a fresh CB install.
-#Thanks to kozz for working out how to add an exclude clause so community builds addon_data and addon isn't touched.
+#Thanks to kozz for working out how to add an exclude clause so Update addon_data and addon isn't touched.
 def WipeInstall():
     if skin!= "skin.confluence":
-        dialog.ok('[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]','Please switch to the default Confluence skin','before performing a wipe.','')
+        dialog.ok('[B] [COLOR=white]Update[/COLOR][/B]','Please switch to the default Confluence skin','before performing a wipe.','')
         xbmc.executebuiltin("ActivateWindow(appearancesettings)")       
     else:
         choice = xbmcgui.Dialog().yesno("ABSOLUTELY CERTAIN?!!!", 'Are you absolutely certain you want to wipe this install?', '', 'All addons and settings will be completely wiped!', yeslabel='Yes',nolabel='No')
         if choice == 0:
             return
         elif choice == 1:
-            dp.create("[COLOR=blue][B]T[/COLOR][COLOR=dodgerblue]R[/COLOR] [COLOR=white]Community Builds[/COLOR][/B]","Wiping Install",'', 'Please Wait')
+            dp.create("[B] [COLOR=white]Update[/COLOR][/B]","Wiping Install",'', 'Please Wait')
             addonPath=xbmcaddon.Addon(id=AddonID).getAddonInfo('path'); addonPath=xbmc.translatePath(addonPath); 
             xbmcPath=os.path.join(addonPath,"..",".."); xbmcPath=os.path.abspath(xbmcPath); plugintools.log("community.builds.WipeXBMC xbmcPath="+xbmcPath); failed=False  
             try:
@@ -1870,7 +1871,7 @@ elif mode=='instructions_6':
         print "############   SHOW INSTRUCTIONS 6   #################"
         Instructions_6()
 elif mode=='cb_root_menu':
-        print "############   Community Builds Menu   #################"
+        print "############   Update Menu   #################"
         CB_Root_Menu()
 elif mode=='genres':
         print "############   Build GENRE1 Menu   #################"

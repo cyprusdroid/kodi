@@ -1,0 +1,1257 @@
+<settings>
+    <audiocds>
+        <autoaction default="true">0</autoaction>
+        <ejectonrip default="true">true</ejectonrip>
+        <encoder default="true">audioencoder.xbmc.builtin.wav</encoder>
+        <recordingpath default="true"></recordingpath>
+        <trackpathformat default="true">%A/%A - %B/[%N. ][%A - ]%T</trackpathformat>
+        <usecddb default="true">true</usecddb>
+    </audiocds>
+    <audiooutput>
+        <ac3passthrough default="true">true</ac3passthrough>
+        <ac3transcode default="true">false</ac3transcode>
+        <audiodevice default="true">ALSA:@:CARD=Headset,DEV=0</audiodevice>
+        <channels default="true">1</channels>
+        <config default="true">2</config>
+        <dtshdpassthrough default="true">false</dtshdpassthrough>
+        <dtspassthrough default="true">false</dtspassthrough>
+        <eac3passthrough default="true">false</eac3passthrough>
+        <guisoundmode default="true">1</guisoundmode>
+        <maintainoriginalvolume default="true">true</maintainoriginalvolume>
+        <passthrough default="true">false</passthrough>
+        <passthroughdevice default="true">ALSA:iec958:CARD=Headset,DEV=0</passthroughdevice>
+        <processquality default="true">30</processquality>
+        <samplerate default="true">48000</samplerate>
+        <stereoupmix default="true">false</stereoupmix>
+        <streamsilence default="true">1</streamsilence>
+        <truehdpassthrough default="true">false</truehdpassthrough>
+    </audiooutput>
+    <cache>
+        <harddisk default="true">256</harddisk>
+    </cache>
+    <cacheaudio>
+        <dvdrom default="true">256</dvdrom>
+        <internet default="true">256</internet>
+        <lan default="true">256</lan>
+    </cacheaudio>
+    <cachedvd>
+        <dvdrom default="true">2048</dvdrom>
+        <lan default="true">2048</lan>
+    </cachedvd>
+    <cacheunknown>
+        <internet default="true">4096</internet>
+    </cacheunknown>
+    <cachevideo>
+        <dvdrom default="true">2048</dvdrom>
+        <internet default="true">4096</internet>
+        <lan default="true">2048</lan>
+    </cachevideo>
+    <debug>
+        <extralogging default="true">false</extralogging>
+        <screenshotpath>$HOME/screenshots/</screenshotpath>
+        <setextraloglevel default="true"></setextraloglevel>
+        <showloginfo default="true">false</showloginfo>
+    </debug>
+    <disc>
+        <playback default="true">0</playback>
+    </disc>
+    <dvds>
+        <automenu default="true">false</automenu>
+        <autorun default="true">false</autorun>
+        <playerregion default="true">0</playerregion>
+    </dvds>
+    <epg>
+        <daystodisplay default="true">3</daystodisplay>
+        <epgupdate default="true">120</epgupdate>
+        <hidenoinfoavailable default="true">true</hidenoinfoavailable>
+        <ignoredbforclient default="true">false</ignoredbforclient>
+        <preventupdateswhileplayingtv default="true">false</preventupdateswhileplayingtv>
+        <selectaction default="true">2</selectaction>
+    </epg>
+    <filelists>
+        <allowfiledeletion default="true">false</allowfiledeletion>
+        <ignorethewhensorting default="true">true</ignorethewhensorting>
+        <showaddsourcebuttons default="true">true</showaddsourcebuttons>
+        <showextensions default="true">true</showextensions>
+        <showhidden default="true">false</showhidden>
+        <showparentdiritems>false</showparentdiritems>
+    </filelists>
+    <general>
+        <addonbrokenfilter default="true">true</addonbrokenfilter>
+        <addonforeignfilter default="true">false</addonforeignfilter>
+        <addonnotifications default="true">true</addonnotifications>
+        <addonupdates default="true">0</addonupdates>
+        <settinglevel>3</settinglevel>
+        <systemtotaluptime>5</systemtotaluptime>
+    </general>
+    <input>
+        <enablejoystick default="true">true</enablejoystick>
+        <enablemouse default="true">true</enablemouse>
+    </input>
+    <karaoke>
+        <autopopupselector default="true">false</autopopupselector>
+        <charset default="true">DEFAULT</charset>
+        <enabled>true</enabled>
+        <font default="true">arial.ttf</font>
+        <fontcolors default="true">0</fontcolors>
+        <fontheight default="true">36</fontheight>
+    </karaoke>
+    <locale>
+        <audiolanguage default="true">original</audiolanguage>
+        <charset>CP1253</charset>
+        <country>Central Europe</country>
+        <keyboardlayouts default="true">English QWERTY</keyboardlayouts>
+        <language default="true">English</language>
+        <subtitlelanguage>Greek</subtitlelanguage>
+        <timezone>Asia/Nicosia</timezone>
+        <timezonecountry>Cyprus</timezonecountry>
+    </locale>
+    <lookandfeel>
+        <enablerssfeeds default="true">false</enablerssfeeds>
+        <font default="true">Default</font>
+        <rssedit default="true"></rssedit>
+        <skin>skin.confluence.custom.mod</skin>
+        <skincolors default="true">SKINDEFAULT</skincolors>
+        <skintheme default="true">SKINDEFAULT</skintheme>
+        <skinzoom default="true">0</skinzoom>
+        <soundskin default="true">SKINDEFAULT</soundskin>
+        <startupwindow default="true">10000</startupwindow>
+    </lookandfeel>
+    <masterlock>
+        <maxretries default="true">3</maxretries>
+        <startuplock default="true">false</startuplock>
+    </masterlock>
+    <musicfiles>
+        <findremotethumbs default="true">true</findremotethumbs>
+        <librarytrackformat default="true"></librarytrackformat>
+        <librarytrackformatright default="true"></librarytrackformatright>
+        <nowplayingtrackformat default="true"></nowplayingtrackformat>
+        <nowplayingtrackformatright default="true"></nowplayingtrackformatright>
+        <trackformat default="true">[%N. ]%A - %T</trackformat>
+        <trackformatright default="true">%D</trackformatright>
+        <usetags default="true">true</usetags>
+    </musicfiles>
+    <musiclibrary>
+        <albumsscraper default="true">metadata.album.universal</albumsscraper>
+        <artistsscraper default="true">metadata.artists.universal</artistsscraper>
+        <backgroundupdate default="true">false</backgroundupdate>
+        <downloadinfo default="true">false</downloadinfo>
+        <enabled default="true">true</enabled>
+        <overridetags default="true">false</overridetags>
+        <showcompilationartists default="true">true</showcompilationartists>
+        <updateonstartup default="true">false</updateonstartup>
+    </musiclibrary>
+    <musicplayer>
+        <autoplaynextitem default="true">true</autoplaynextitem>
+        <crossfade default="true">0</crossfade>
+        <crossfadealbumtracks default="true">true</crossfadealbumtracks>
+        <queuebydefault default="true">false</queuebydefault>
+        <replaygainavoidclipping default="true">false</replaygainavoidclipping>
+        <replaygainnogainpreamp default="true">89</replaygainnogainpreamp>
+        <replaygainpreamp default="true">89</replaygainpreamp>
+        <replaygaintype default="true">1</replaygaintype>
+        <visualisation default="true">visualization.glspectrum</visualisation>
+    </musicplayer>
+    <mymusic>
+        <defaultlibview default="true"></defaultlibview>
+        <songthumbinvis default="true">false</songthumbinvis>
+        <startwindow default="true">10501</startwindow>
+        <playlist>
+            <repeat>false</repeat>
+            <shuffle>false</shuffle>
+        </playlist>
+        <needsupdate>0</needsupdate>
+    </mymusic>
+    <myvideos>
+        <extractflags default="true">true</extractflags>
+        <extractthumb default="true">true</extractthumb>
+        <flatten default="true">false</flatten>
+        <replacelabels default="true">true</replacelabels>
+        <selectaction default="true">1</selectaction>
+        <stackvideos default="true">false</stackvideos>
+        <startwindow>10025</startwindow>
+        <watchmodemovies>0</watchmodemovies>
+        <watchmodetvshows>0</watchmodetvshows>
+        <watchmodemusicvideos>0</watchmodemusicvideos>
+        <playlist>
+            <repeat>false</repeat>
+            <shuffle>false</shuffle>
+        </playlist>
+        <needsupdate>0</needsupdate>
+    </myvideos>
+    <network>
+        <bandwidth default="true">0</bandwidth>
+        <httpproxypassword default="true"></httpproxypassword>
+        <httpproxyport default="true">8080</httpproxyport>
+        <httpproxyserver default="true"></httpproxyserver>
+        <httpproxytype default="true">0</httpproxytype>
+        <httpproxyusername default="true"></httpproxyusername>
+        <usehttpproxy default="true">false</usehttpproxy>
+    </network>
+    <pictures>
+        <displayresolution default="true">14</displayresolution>
+        <generatethumbs default="true">true</generatethumbs>
+        <showvideos default="true">true</showvideos>
+        <useexifrotation default="true">true</useexifrotation>
+        <usetags default="true">true</usetags>
+    </pictures>
+    <powermanagement>
+        <displaysoff default="true">0</displaysoff>
+        <shutdownstate default="true">1</shutdownstate>
+        <shutdowntime default="true">0</shutdowntime>
+        <wakeonaccess default="true">false</wakeonaccess>
+    </powermanagement>
+    <pvrmanager>
+        <backendchannelorder default="true">true</backendchannelorder>
+        <enabled default="true">false</enabled>
+        <hideconnectionlostwarning default="true">false</hideconnectionlostwarning>
+        <syncchannelgroups default="true">true</syncchannelgroups>
+        <usebackendchannelnumbers default="true">false</usebackendchannelnumbers>
+    </pvrmanager>
+    <pvrmenu>
+        <closechannelosdonswitch default="true">true</closechannelosdonswitch>
+        <displaychannelinfo default="true">5</displaychannelinfo>
+        <iconpath default="true"></iconpath>
+    </pvrmenu>
+    <pvrparental>
+        <duration default="true">300</duration>
+        <enabled default="true">false</enabled>
+        <pin default="true"></pin>
+    </pvrparental>
+    <pvrplayback>
+        <channelentrytimeout default="true">0</channelentrytimeout>
+        <confirmchannelswitch default="true">false</confirmchannelswitch>
+        <playminimized default="true">true</playminimized>
+        <scantime default="true">10</scantime>
+        <signalquality default="true">true</signalquality>
+        <startlast default="true">0</startlast>
+    </pvrplayback>
+    <pvrpowermanagement>
+        <backendidletime default="true">15</backendidletime>
+        <dailywakeup default="true">false</dailywakeup>
+        <dailywakeuptime default="true">00:00:00</dailywakeuptime>
+        <enabled default="true">false</enabled>
+        <prewakeup default="true">15</prewakeup>
+        <setwakeupcmd default="true">/usr/bin/setwakeup.sh</setwakeupcmd>
+    </pvrpowermanagement>
+    <pvrrecord>
+        <defaultlifetime default="true">99</defaultlifetime>
+        <defaultpriority default="true">50</defaultpriority>
+        <instantrecordtime default="true">120</instantrecordtime>
+        <marginend default="true">0</marginend>
+        <marginstart default="true">0</marginstart>
+        <timernotifications default="true">true</timernotifications>
+    </pvrrecord>
+    <scrapers>
+        <moviesdefault default="true">metadata.themoviedb.org</moviesdefault>
+        <musicvideosdefault default="true">metadata.musicvideos.theaudiodb.com</musicvideosdefault>
+        <tvshowsdefault default="true">metadata.tvdb.com</tvshowsdefault>
+    </scrapers>
+    <screensaver>
+        <mode default="true">screensaver.xbmc.builtin.dim</mode>
+        <time default="true">3</time>
+        <usedimonpause default="true">true</usedimonpause>
+        <usemusicvisinstead default="true">true</usemusicvisinstead>
+    </screensaver>
+    <services>
+        <airplay default="true">true</airplay>
+        <airplayios8compat default="true">true</airplayios8compat>
+        <airplaypassword default="true"></airplaypassword>
+        <airplayvolumecontrol default="true">true</airplayvolumecontrol>
+        <devicename default="true">Kodi</devicename>
+        <esallinterfaces default="true">false</esallinterfaces>
+        <escontinuousdelay default="true">25</escontinuousdelay>
+        <esenabled default="true">true</esenabled>
+        <esinitialdelay default="true">750</esinitialdelay>
+        <esmaxclients default="true">20</esmaxclients>
+        <esport default="true">9777</esport>
+        <esportrange default="true">10</esportrange>
+        <upnpannounce default="true">true</upnpannounce>
+        <upnpcontroller default="true">false</upnpcontroller>
+        <upnprenderer default="true">false</upnprenderer>
+        <upnpserver default="true">false</upnpserver>
+        <useairplaypassword default="true">false</useairplaypassword>
+        <webserver default="true">true</webserver>
+        <webserverpassword default="true"></webserverpassword>
+        <webserverport default="true">80</webserverport>
+        <webserverusername default="true">kodi</webserverusername>
+        <webskin default="true">webinterface.default</webskin>
+        <zeroconf default="true">true</zeroconf>
+    </services>
+    <slideshow>
+        <displayeffects default="true">true</displayeffects>
+        <shuffle default="true">false</shuffle>
+        <staytime default="true">5</staytime>
+    </slideshow>
+    <smb>
+        <winsserver default="true">0.0.0.0</winsserver>
+        <workgroup default="true">WORKGROUP</workgroup>
+    </smb>
+    <subtitles>
+        <align default="true">0</align>
+        <charset>CP1253</charset>
+        <color default="true">1</color>
+        <custompath default="true"></custompath>
+        <downloadfirst default="true">false</downloadfirst>
+        <font default="true">arial.ttf</font>
+        <height default="true">28</height>
+        <languages>English,Greek</languages>
+        <movie default="true">-</movie>
+        <overrideassfonts default="true">false</overrideassfonts>
+        <pauseonsearch default="true">true</pauseonsearch>
+        <stereoscopicdepth default="true">0</stereoscopicdepth>
+        <storagemode default="true">0</storagemode>
+        <style default="true">1</style>
+        <tv default="true">-</tv>
+    </subtitles>
+    <system>
+        <playlistspath>special://profile/playlists/</playlistspath>
+    </system>
+    <videolibrary>
+        <actorthumbs default="true">true</actorthumbs>
+        <backgroundupdate default="true">false</backgroundupdate>
+        <enabled default="true">true</enabled>
+        <flattentvshows default="true">1</flattentvshows>
+        <groupmoviesets default="true">false</groupmoviesets>
+        <showunwatchedplots default="true">true</showunwatchedplots>
+        <updateonstartup default="true">false</updateonstartup>
+    </videolibrary>
+    <videoplayer>
+        <adjustrefreshrate default="true">0</adjustrefreshrate>
+        <autoplaynextitem default="true">false</autoplaynextitem>
+        <decodingmethod default="true">1</decodingmethod>
+        <errorinaspect default="true">0</errorinaspect>
+        <hqscalers default="true">0</hqscalers>
+        <maxspeedadjust default="true">5</maxspeedadjust>
+        <pauseafterrefreshchange default="true">0</pauseafterrefreshchange>
+        <prefervaapirender default="true">true</prefervaapirender>
+        <quitstereomodeonstop default="true">true</quitstereomodeonstop>
+        <rendermethod default="true">0</rendermethod>
+        <stereoscopicplaybackmode default="true">0</stereoscopicplaybackmode>
+        <stretch43>4</stretch43>
+        <synctype default="true">2</synctype>
+        <teletextenabled default="true">true</teletextenabled>
+        <teletextscale default="true">true</teletextscale>
+        <useamcodec default="true">true</useamcodec>
+        <usedisplayasclock default="true">false</usedisplayasclock>
+        <usedxva2 default="true">true</usedxva2>
+        <useomx default="true">true</useomx>
+        <useomxplayer default="true">true</useomxplayer>
+        <usepbo default="true">true</usepbo>
+        <useswdecodingforsd default="true">false</useswdecodingforsd>
+        <usevaapi default="true">true</usevaapi>
+        <usevaapimpeg2 default="true">true</usevaapimpeg2>
+        <usevaapimpeg4 default="true">true</usevaapimpeg4>
+        <usevaapivc1 default="true">false</usevaapivc1>
+        <usevda default="true">true</usevda>
+        <usevdpau default="true">true</usevdpau>
+        <usevdpaumixer default="true">true</usevdpaumixer>
+        <usevdpaumpeg2 default="true">true</usevdpaumpeg2>
+        <usevdpaumpeg4 default="true">false</usevdpaumpeg4>
+        <usevdpauvc1 default="true">true</usevdpauvc1>
+        <usevideotoolbox default="true">true</usevideotoolbox>
+        <vdpauUpscalingLevel default="true">false</vdpauUpscalingLevel>
+        <vdpau_allow_xrandr default="true">false</vdpau_allow_xrandr>
+    </videoplayer>
+    <videoscreen>
+        <blankdisplays default="true">false</blankdisplays>
+        <fakefullscreen default="true">true</fakefullscreen>
+        <limitedrange default="true">false</limitedrange>
+        <monitor default="true">Default</monitor>
+        <preferedstereoscopicmode default="true">100</preferedstereoscopicmode>
+        <resolution>18</resolution>
+        <screen default="true">0</screen>
+        <screenmode>00192001080060.00000pstd</screenmode>
+        <stereoscopicmode default="true">0</stereoscopicmode>
+        <vsync default="true">3</vsync>
+    </videoscreen>
+    <weather>
+        <addon default="true"></addon>
+        <currentlocation default="true">1</currentlocation>
+    </weather>
+    <window>
+        <height default="true">480</height>
+        <width default="true">720</width>
+    </window>
+    <skinsettings>
+        <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.confluence.UseCustomBackground">false</setting>
+        <setting type="bool" name="skin.confluence.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.confluence.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.confluence.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.confluence.HomepageHideRecentlyAddedVideo">false</setting>
+        <setting type="bool" name="skin.confluence.HomepageHideRecentlyAddedAlbums">false</setting>
+        <setting type="bool" name="skin.confluence.homepageWeatherinfo">false</setting>
+        <setting type="bool" name="skin.confluence.homepageMusicinfo">false</setting>
+        <setting type="bool" name="skin.confluence.homepageVideoinfo">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoMovieButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoTVShowButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
+        <setting type="bool" name="skin.confluence.AutoScroll">false</setting>
+        <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
+        <setting type="bool" name="skin.confluence.Show_SlideShow_Paused">false</setting>
+        <setting type="bool" name="skin.confluence.WindowedTrailer">false</setting>
+        <setting type="bool" name="skin.confluence.HideFilenameFlagging">false</setting>
+        <setting type="bool" name="skin.confluence.ActivateTvTunes">false</setting>
+        <setting type="bool" name="skin.confluence.HideVisualizationFanart">false</setting>
+        <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
+        <setting type="bool" name="skin.confluence.AnimeWindowXMLDialogClose">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AutoStartVisualization">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideBusyAnimation">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AnimateVizFanart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.GlobalBackground">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HolidayEffects">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ShowWeatherFanart">true</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ShowMovieDBFanart">true</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ShowTVShowDBFanart">true</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ShowMusicDBFanart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ShowConcertDBFanart">true</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.GlobalWeatherFanart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideWidgetFanArt">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.EnableMinSpec">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideVisualizationFanart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AllowSlideShowArt">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AllowVizExtraFanart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AllowTransparentFanart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.InitialSetUpRun">true</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.DisableHomeReturnButtons">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.DisableFloorVolumeButtons">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideSystemWeather">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideSystemClock">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.UPnP_Mode">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideHomeSearch">true</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ParentDirLabel">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ABCKeyBoard">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.KioskMode">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.MediaShortDescription">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideNumItemsCount">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideEpisodeThumb">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.WrapAroundHomeMenu">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.RaiseMainMenuBar">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideDvdMenuItem">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AutoHideSubMenu">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideNowPlayingInfo">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.EnableLargeWidget">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideHomeStats">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideHomeAddonName">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideRainDropEffect">true</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideVisualizationCDart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideTraditionalCDart">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ShowBackgroundAlbumWall">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AllowSlideShowBio">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideInfoStartOSD">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HidePauseInfo">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.OSDInfoLogo">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideSeekBarOSD">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideYearTitle">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideNextSongsInfo">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideNewMediaStat">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AutoScroll">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.Show_SlideShow_Paused">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.WindowedTrailer">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideXBMCIntro">true</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.StickyHomeMenuAction">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideSytemMenuItem">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideHomeMenuSystem">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AutoHidePowerBtn">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideStartUpBackground">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.SmallVolumeJump">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideFavouritesBtn">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideSuggestedMedia">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.DisableScriptPlayList">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.EnableRandomPlaylist">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.EnableUnWatchedPlaylist">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideArtworkDownloader">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideTvTunes">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.DisableWatchItLater">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ViewSubTitleFlag">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.HideWatchStatus">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ToggleUPnPMode">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.ViewStatusBanner">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View501GenreIcons">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View508HideInfo">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View508DelayInfo">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View503CharacterArt">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View504XtraFanArt">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View515HideTVBanners">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View515Hidelogo">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View515SeasonArt">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View724DisableCases">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.UseDiscTypeCase">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.StopAutoScroll">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View730HideLogo">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.View730ShowThumb">false</setting>
+        <setting type="bool" name="skin.confluence.custom.mod.AnimeWindowXMLDialogClose">false</setting>
+        <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton5"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton5"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton1"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton2"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton3"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton4"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton5"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton5"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HolidayThemePath">special://skin/extras/Holiday/xmastree.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.PowerBtnBackground">/storage/pictures/shutdown-button.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.FavBtnBackground">special://skin/backgrounds/homescreen/favourite.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.SearchBtnBackground">special://skin/backgrounds/homescreen/search.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.WeatherFanartDir">special://skin/backgrounds/weather/</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.FanArt">/storage/pictures/Pictures.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.FanArt">/storage/pictures/LiveTV.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.FanArt">/storage/pictures/movies-alluring-movies-high-quality-image-optimus-prime-hd-photography-desktop-wallpaper-optimus-prime-optimus-prime-voice-optimus-prime-youtube-optimus-prime-quotes-optimus-prime-toy-optimus-prime-du.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.FanArt">/storage/pictures/Sports.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.FanArt">/storage/pictures/Family.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.FanArt">/storage/pictures/Adult.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.FanArt">/storage/pictures/Music.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.FanArt">/storage/pictures/Programs.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.11.FanArt">special://skin/backgrounds/homescreen/playdisc.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.12.FanArt">/storage/pictures/Settings.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UsrGenreFanartDir">special://skin/backgrounds/moviegenre/</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UPnPServer">XBMC</setting>
+        <setting type="string" name="skin.confluence.custom.mod.MPAACountryCert">Great Britian</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.Label">Pictures</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.Path">ActivateWindow(Pictures)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.Sub">Pictures</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.Addon">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.Widget">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.Type">Pictures</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.Label">Videos</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.Path">ActivateWindow(VideoLibrary,Files,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.Sub">Videos</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.Addon">AddonSetOne</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.Type">Videos</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.Label">Adult</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.Path">ActivateWindow(Videos,Addons,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.Sub">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.Addon">AddonSetFour</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.Widget">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.Type">Videos</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.Label">Music</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.Path">ActivateWindow(MusicLibrary,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.Sub">Music</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.Addon">AddonSetFive</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.Type">Music</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.Label">Programs</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.Path">ActivateWindow(Programs,Addons,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.Sub">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.Addon">AddonSetSix</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.Widget">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.Type">Programs</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.12.Addon">AddonSetseven</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.12.Widget">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.1.Label">v</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.2.Label">f</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.3.Label">s</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.4.Label">a</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.5.Label">m</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.6.Label">p</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.7.Label">s</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.Label">TV channels</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.Sub">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.Addon">AddonSetTen</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.Widget">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.Type">LiveTV</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.Label">Sports</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.Sub">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.Addon">AddonSetThree</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.Widget">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.Type">Videos</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.Label">Family</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.Sub">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.Addon">AddonSetTwo</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.Widget">None</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.Type">Videos</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.12.Sub">Settings</setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.2.Label">Hidden</setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.3.Label">Hidden</setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.4.Label">Hidden</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.1.Label">Genesis</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.2.Label">Yify Movies HD</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.3.Label">Movies HD</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.4.Label">Online Movies Pro</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.5.Label">Hellenic TV</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.2.Label">Cartoon HD</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.3.Label">Greek Cartoons</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.4.Label">C[COLOR cornflowerblue]artoon [COLOR orange]World[/COLOR][/COLOR]</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.1.Label">SportsDevil</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.2.Label">p2p-streams</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.3.Label">Dutch Sports Streams</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.4.Label">Woody</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.5.Label">Sports</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.1.Label">VideoDevil</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.2.Label">Filmikz</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.3.Label">Movie4K.to</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.4.Label">Whitecream</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.5.Label">Erotik (XXX)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.1.Label">Digitally Imported</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.2.Label">Hellenic Radio</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.3.Label">Mikey&amp;apos;s Karaoke</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.4.Label">XBMC Karaoke addon</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.5.Label">XunityTalk Music</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.1.Label">F.T.V</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.2.Label">Food Network</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.3.Label">iSTREAM</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.4.Label">Navi-X</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.5.Label">Victoria&amp;apos;s Secret</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.1.Label">Pulsar</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.2.Label">XBMCtorrent</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.3.Label">Entertainment [COLOR dodgerblue][B]HUB[/B][/COLOR]</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.Path">ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.Path">ActivateWindow(Videos,Addons,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.Path">ActivateWindow(Videos,Addons,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.2.Path">Hidden</setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.3.Path">Hidden</setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.4.Path">Hidden</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.1.icon">/storage/.xbmc/addons/plugin.video.genesis/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.1.Path">RunAddon(plugin.video.genesis)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.2.icon">/storage/.xbmc/addons/plugin.video.yifymovies.hd/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.2.Path">RunAddon(plugin.video.yifymovies.hd)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.3.icon">/storage/.xbmc/addons/plugin.video.movieshd/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.3.Path">RunAddon(plugin.video.movieshd)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.4.icon">/storage/.xbmc/addons/plugin.video.onlinemovies/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.4.Path">RunAddon(plugin.video.onlinemovies)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.5.icon">/storage/.xbmc/addons/plugin.video.hellenic.tv/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetOne.5.Path">RunAddon(plugin.video.hellenic.tv)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.2.icon">/storage/.xbmc/addons/plugin.video.cartoonhd/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.2.Path">RunAddon(plugin.video.cartoonhd)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.3.icon">/storage/.xbmc/addons/plugin.video.hellenic.tv/resources/art/root_cartoons.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.3.Path">ActivateWindow(10025,plugin://plugin.video.hellenic.tv/?action=root_cartoons,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.4.icon">/storage/.xbmc/addons/plugin.video.tbh.cartoonworld/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.4.Path">RunAddon(plugin.video.tbh.cartoonworld)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.1.icon">/storage/.xbmc/addons/plugin.video.SportsDevil/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.1.Path">RunAddon(plugin.video.SportsDevil)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.2.icon">/storage/.xbmc/addons/plugin.video.p2p-streams/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.2.Path">RunAddon(plugin.video.p2p-streams)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.3.icon">/storage/.xbmc/addons/plugin.video.janlul/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.3.Path">RunAddon(plugin.video.janlul)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.4.icon">http://banjaluka.watchkodi.com/images/Woody.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.4.Path">ActivateWindow(10025,plugin://plugin.video.phstreams/?fanart&amp;mode=dmode&amp;name=Woody&amp;sound&amp;url=http%3a%2f%2fbanjaluka.watchkodi.com%2fmaindir%2fmain.xml,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.5.icon">http://icons.iconarchive.com/icons/yingfengling-fl/i-love-sports/256/soccer-icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.5.Path">ActivateWindow(10025,plugin://plugin.video.shahidmbcnet/?mode=15&amp;name=Sports&amp;url=sports,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.1.icon">/storage/.xbmc/addons/plugin.video.videodevil/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.1.Path">RunAddon(plugin.video.videodevil)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.2.icon">/storage/.xbmc/addons/plugin.video.filmikz/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.2.Path">RunAddon(plugin.video.filmikz)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.3.icon">/storage/.xbmc/addons/plugin.video.movie4k/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.3.Path">RunAddon(plugin.video.movie4k)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.4.icon">/storage/.xbmc/addons/plugin.video.whitecream/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.4.Path">RunAddon(plugin.video.whitecream)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.5.icon">/storage/.xbmc/addons/plugin.video.erotik/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFour.5.Path">RunAddon(plugin.video.erotik)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.1.icon">/storage/.xbmc/addons/plugin.audio.di.fm/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.1.Path">RunAddon(plugin.audio.di.fm)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.2.icon">/storage/.kodi/addons/plugin.video.hellenic.tv/resources/art/root_radios.jpg</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.2.Path">ActivateWindow(10025,&quot;plugin://plugin.video.hellenic.tv/?action=root_radios&quot;,return)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.3.icon">/storage/.xbmc/addons/plugin.video.MikeysKaraoke/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.3.Path">RunAddon(plugin.video.MikeysKaraoke)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.4.icon">/storage/.xbmc/addons/plugin.video.XBMCKaraoke/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.4.Path">RunAddon(plugin.video.XBMCKaraoke)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.5.icon">/storage/.xbmc/addons/plugin.audio.xbmchubmusic/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.5.Path">RunAddon(plugin.audio.xbmchubmusic)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.1.icon">/storage/.xbmc/addons/plugin.video.F.T.V/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.1.Path">RunAddon(plugin.video.F.T.V)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.2.icon">/storage/.xbmc/addons/plugin.video.foodnetwork/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.2.Path">RunAddon(plugin.video.foodnetwork)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.3.icon">/storage/.xbmc/addons/script.icechannel/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.3.Path">RunAddon(script.icechannel)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.4.icon">/storage/.xbmc/addons/Navi-X/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.4.Path">RunAddon(script.navi-x)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.5.icon">/storage/.xbmc/addons/plugin.video.VICTORIASSECRET/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSix.5.Path">RunAddon(plugin.video.VICTORIASSECRET)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.1.icon">/storage/.xbmc/addons/plugin.video.pulsar/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.1.Path">RunAddon(plugin.video.pulsar)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.2.icon">/storage/.xbmc/addons/plugin.video.xbmctorrent/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.2.Path">RunAddon(plugin.video.xbmctorrent)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.3.icon">/storage/.xbmc/addons/plugin.video.allinone/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.3.Path">RunAddon(plugin.video.allinone)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UsrSelectAddon">plugin.video.aaastream</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.3.List">plugin://plugin.video.hellenic.tv/?action=root_cartoons</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.4.List">plugin://plugin.video.phstreams/?fanart&amp;mode=dmode&amp;name=Woody&amp;sound&amp;url=http%3a%2f%2fbanjaluka.watchkodi.com%2fmaindir%2fmain.xml</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetThree.5.List">plugin://plugin.video.shahidmbcnet/?mode=15&amp;name=Sports&amp;url=sports</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.5.Label">Cartoon HD Extra</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.5.icon">/storage/.xbmc/addons/plugin.video.cartoonhdtwo/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.5.Path">RunAddon(plugin.video.cartoonhdtwo)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.3.Label">Vdubt25</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.3.icon">/storage/.xbmc/addons/plugin.video.vdubt/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.3.Path">RunAddon(plugin.video.vdubt)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.10.Label">ppp</setting>
+        <setting type="string" name="skin.confluence.custom.mod.CustomBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UsrMovieFanartDir"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UsrTVShowFanartDir"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UsrArtistsFanartDir"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UsrConcertsFanartDir"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.FanArt"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.FanArt"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.globalbackgroundpath"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.FavouritesFanartDir"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.PhysicalMusicFolder"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.MediaPanelTrans"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.WatchStatusType"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubVideos.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMusic.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubSystem.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubLiveTV.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubPictures.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubMovies.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubTVShows.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubConcerts.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubOne.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubTwo.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.SubProg.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.6.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.6.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.7.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.7.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.9.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.10.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSubThree.10.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItemLastAction"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.Sub"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.Type"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.Addon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.Widget"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItemLastLabel"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.Widget"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.Sub"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.Type"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.Addon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.Widget"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.Widget"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.Live"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.1.Label">Disney Junior</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.1.icon">/storage/.kodi/addons/plugin.video.disneyjunior/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTwo.1.Path">RunAddon(plugin.video.disneyjunior)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.4.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.5.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetSeven.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.1.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.2.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.3.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.4.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.5.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetEight.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.1.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.1.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.1.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.2.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.2.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.2.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.3.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.3.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.3.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.4.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.4.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.4.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.5.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetNine.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.1.Label">.[COLOR blue]AAA[/COLOR] Live TV</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.1.icon">/storage/.kodi/addons/plugin.video.aaastream/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.1.Path">RunAddon(plugin.video.aaastream)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.2.Label">HALOW LIVE</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.2.icon">/storage/.kodi/addons/plugin.video.Halow/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.2.Path">RunAddon(plugin.video.Halow)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.4.Label">World Tv XunityTalk.com</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.4.icon">/storage/.kodi/addons/plugin.video.mikeytv/icon.png</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.4.Path">RunAddon(plugin.video.mikeytv)</setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.5.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.5.icon"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetTen.5.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UPnP_Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.1.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.2.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.3.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.4.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.5.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.6.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.7.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.8.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.9.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.HomeItem.10.Playlist"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.StartUpBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.LyricScript.Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.Startup_Playlist_Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserVideosSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserMoviesSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserTVShowsSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserConcertsSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserMusicSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserProgsSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserPicturesSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectOneSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectTwoSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectThreeSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.8.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSelectAddon.9.Label"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserTVNameSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UserSystemSubMenu"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.PowerBtnCommand"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.UsrAlbumThumbsDir"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.LyricScript_Path"></setting>
+        <setting type="string" name="skin.confluence.custom.mod.AddonSetFive.2.List">plugin://plugin.video.hellenic.tv/?action=root_radios</setting>
+    </skinsettings>
+    <resolutions>
+        <resolution>
+            <description>1280x720 @ 60.00 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 60.00i - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 60.00 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>38</left>
+                <top>27</top>
+                <right>1881</right>
+                <bottom>1052</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720 @ 50.00 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 50.00i - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 50.00 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080 @ 24.00 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+    </resolutions>
+    <defaultvideosettings>
+        <deinterlacemode>1</deinterlacemode>
+        <interlacemethod>1</interlacemethod>
+        <scalingmethod>1</scalingmethod>
+        <noisereduction>0.000000</noisereduction>
+        <postprocess>false</postprocess>
+        <sharpness>0.000000</sharpness>
+        <viewmode>4</viewmode>
+        <zoomamount>1.000000</zoomamount>
+        <pixelratio>0.755742</pixelratio>
+        <verticalshift>0.000000</verticalshift>
+        <volumeamplification>0.000000</volumeamplification>
+        <outputtoallspeakers>false</outputtoallspeakers>
+        <showsubtitles>true</showsubtitles>
+        <brightness>50.000000</brightness>
+        <contrast>50.000000</contrast>
+        <gamma>20.000000</gamma>
+        <audiodelay>0.000000</audiodelay>
+        <subtitledelay>0.000000</subtitledelay>
+        <autocrop>false</autocrop>
+        <nonlinstretch>false</nonlinstretch>
+        <stereomode>0</stereomode>
+    </defaultvideosettings>
+    <viewstates>
+        <musicfiles>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicfiles>
+        <musiclastfm>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musiclastfm>
+        <musicnavalbums>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavalbums>
+        <musicnavartists>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavartists>
+        <musicnavsongs>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavsongs>
+        <pictures>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </pictures>
+        <programs>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </programs>
+        <videofiles>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videofiles>
+        <videonavactors>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavactors>
+        <videonavepisodes>
+            <viewmode>720896</viewmode>
+            <sortmethod>21</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavepisodes>
+        <videonavgenres>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavgenres>
+        <videonavmusicvideos>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavmusicvideos>
+        <videonavseasons>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavseasons>
+        <videonavtitles>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavtitles>
+        <videonavtvshows>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavtvshows>
+        <videonavyears>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavyears>
+    </viewstates>
+    <audio>
+        <mute>false</mute>
+        <fvolumelevel>1.000000</fvolumelevel>
+    </audio>
+</settings>
