@@ -349,7 +349,7 @@ def COMMUNITY(url):
     link = OPEN_URL(buildsURL).replace('\n','').replace('\r','')
     print link
 #    addBuildDir('[COLOR=lime]Add another filter to the search[/COLOR]',buildsURL,'genres2','genres.png','','','','','')
-    match=re.compile('name="(.+?)"<br>id="(.+?)"<br>Thumbnail="(.+?)"<br>Fanart="(.+?)"', re.DOTALL).findall(link)
+    match=re.compile('name="(.+?)"  <br> id="(.+?)"  <br> Thumbnail="(.+?)"  <br> Fanart="(.+?)"', re.DOTALL).findall(link)
     for name,url,iconimage,fanart in match:
         addBuildDir(name,url,'community_menu',iconimage,fanart,'','','','')
 #---------------------------------------------------------------------------------------------------
@@ -383,7 +383,7 @@ def COMMUNITY_SEARCH(url):
     buildsURL = 'http://cdn.rawgit.com/cyprusdroid/kodi/master/cyprusdroid1.html'           
     link = OPEN_URL(buildsURL).replace('\n','').replace('\r','')
     addBuildDir('[COLOR=lime]Add another filter to the search[/COLOR]',buildsURL,'genres2','genres.png','','','','','')
-    match=re.compile('name="(.+?)"<br>id="(.+?)"<br>Thumbnail="(.+?)"<br>Fanart="(.+?)"', re.DOTALL).findall(link)
+    match=re.compile('name="(.+?)"  <br> id="(.+?)"  <br> Thumbnail="(.+?)"  <br> Fanart="(.+?)"', re.DOTALL).findall(link)
     for name,url,iconimage,fanart in match:
         addBuildDir(name,url,'community_menu',iconimage,fanart,'','','','')
 #---------------------------------------------------------------------------------------------------
